@@ -1,5 +1,5 @@
 import React from 'react'
-import Desk from './desk'
+import Desk from './Desk'
 
 
 function App() {

@@ -1,0 +1,15 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    grid-template-rows: minmax(200px, 400px);
+    grid-gap: 60px;
+    justify-content: center;
+}
+
+.desk-column {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    grid-gap: 10px;
+    justify-content: center;
+}
