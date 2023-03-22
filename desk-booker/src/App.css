@@ -1,15 +1,26 @@
 .grid-container {
-    display: grid;
-    grid-template-columns: repeat(3, 200px);
-    grid-template-rows: minmax(200px, 400px);
-    grid-gap: 60px;
-    justify-content: center;
+  display: grid;
+  grid-gap: 60px;
+  justify-content: center;
+}
+
+.desk-columns {
+  display: grid;
+  grid-template-columns: repeat(6, 120px);
+  grid-template-rows: repeat(6, 1fr);
+  grid-gap: 10px;
+  justify-content: center;
+  grid-column-gap: 10px; /* Add gap between all columns */
+}
+
+.desk-columns:nth-child(2n) {
+  grid-column-gap: 30px; /* Remove gap between every second column */
 }
 
 .desk-column {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(5, 1fr);
-    grid-gap: 10px;
-    justify-content: center;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: repeat(6, 100px);
+  grid-gap: 10px;
+  justify-content: center;
 }
