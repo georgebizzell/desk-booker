@@ -14,13 +14,16 @@ function DeskLayout(numberOfColumns: number, numberOfRows: number) {
 
   const DeskNames = [];
 
-  for (let i = numberOfRows; i > 0; i--) {
+  for (let i = 0; i < numberOfColumns; i++) {
+    const letter = DeskLetters[i];
+    const column = [];
 
-    const row = DeskLetters.map((letter) => letter + i);
-    
-    DeskNames.push(row);
+    for (let j = numberOfRows; j > 0; j--) {
+      column.push(`${letter}${j}`);
+    }
+
+    DeskNames.push(column);
   }
-  console.log(DeskNames);
 
   return DeskNames;
 }
